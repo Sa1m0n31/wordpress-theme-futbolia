@@ -29,7 +29,7 @@ button {
 .header {
     position: relative;
     width: 100%;
-    height: 520px;
+    height: 470px;
 }
 
 .header .news {
@@ -160,3 +160,237 @@ button {
 .header .title-section .read-more img {
     margin-left: 15px;
 }
+
+/* MAIN SECTION */
+
+.main-section {
+    height: 800px;
+    background: url("./img/boisko.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Previous news */
+
+.main-section .previous-news {
+    display: flex;
+    justify-self: center;
+}
+
+.main-section .news-section h2 {
+    padding: 20px 0;
+}
+
+.main-section .news-section .news-container, .main-section .news-section .news-container .news-item {
+    display: flex;
+}
+
+.main-section .news-section .news-container .news-item {
+    width: 400px;
+    height: 180px;
+    margin-right: 50px;
+}
+.main-section .news-section .news-container .news-item .news-img {
+    height: 100%;
+    width: 200px;
+    position: relative;
+}
+
+.main-section .news-section .news-container .news-item .news-img img {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-section .news-section .news-container .news-item .news-content {
+    background-color: #ffffff;
+    width: 330px;
+    padding: 5% 20px 5% 100px;
+    box-shadow: 0 3px 6px #00000029;
+    height: 100%;
+}
+
+.main-section .news-section .news-container .news-item .news-content .news-title {
+    color: #433C78;
+    font-size: 20px;
+}
+
+.main-section .news-section .news-container .news-item .news-content .news-excerpt {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+/* Table */
+
+.main-section .previous-news .table {
+    margin: 20px 0 0 40px;
+}
+
+.main-section .previous-news .table table {
+    display: block;
+    border-left: 5px solid #433C78;
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 180px;
+    overflow-y: scroll;
+}
+
+.main-section table thead {
+    font-size: 12px;
+}
+
+.main-section table tbody tr {
+    height: 55px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.main-section table tbody td {
+    width: 25px;
+}
+
+.main-section table tbody .club-name {
+    width: 130px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-section table tbody .club-img {
+    width: 50px;
+}
+
+.main-section table tbody td img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Scrollbar */
+
+.main-section table::-webkit-scrollbar {
+    width: 15px;
+}
+
+.main-section table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.main-section table::-webkit-scrollbar-thumb {
+    background-color: #433C78;
+}
+
+/* Matches */
+
+.matches {
+    margin-top: 50px;
+    width: 86%;
+    display: flex;
+    justify-self: center;
+    border-top: 5px solid #433C78;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.matches .last-match {
+    background: rgba(0, 0, 0, .4);
+}
+
+.matches .last-match, .matches .upcoming-match {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matches h2 {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.matches .score {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.matches .score .team {
+    width: 100px;
+    height: 100px;
+}
+
+.matches .score .team img {
+    width: 100%;
+    height: 100%;
+}
+
+.matches .score .result {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.matches h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.matches .more-btn {
+    background: #433C78;
+    color: #fff;
+    height: 30px;
+    width: 120px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.matches .upcoming-matches {
+    display: flex;
+    margin-left: 40px;
+    background: rgba(0, 0, 0, .4);
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.matches .upcoming-matches .upcoming-matches-container {
+    display: flex;
+}
+
+.matches .upcoming-matches h2 {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.matches .upcoming-match {
+    position: relative;
+}
+
+.matches .upcoming-matches .upcoming-match::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width: 1px;
+    background: #fff;
+    transform: translateY(-20%);
+}
+
+.matches .upcoming-matches .next {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
