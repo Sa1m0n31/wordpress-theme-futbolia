@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>FC Football Kids</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
 </head>
 <body>
 <div class="container">
@@ -255,7 +256,7 @@
                 <div class="team-slider-container">
                     <div class="player">
                         <div class="player-img">
-                            <img src="img/cristiano.png" alt="player-1" />
+                            <img src="img/lewandowski.jpg" alt="player-1" />
                         </div>
                         <div class="player-name">
                             <div class="number">1</div>
@@ -264,7 +265,7 @@
                     </div>
                     <div class="player">
                         <div class="player-img">
-                            <img src="img/reus.png" alt="player-2" />
+                            <img src="img/lewandowski.jpg" alt="player-2" />
                         </div>
                         <div class="player-name">
                             <div class="number">1</div>
@@ -273,7 +274,7 @@
                     </div>
                     <div class="player">
                         <div class="player-img">
-                            <img src="img/erling.png" alt="player-3" />
+                            <img src="img/lewandowski.jpg" alt="player-3" />
                         </div>
                         <div class="player-name">
                             <div class="number">1</div>
@@ -282,11 +283,30 @@
                     </div>
                     <div class="player">
                         <div class="player-img">
-                            <img src="./img/lewy.png" alt="player-4" />
+                            <img src="img/lewandowski.jpg" alt="player-4" />
                         </div>
                         <div class="player-name">
                             <div class="number">1</div>
                             <h2 class="name">Ronaldo</h2>
+                        </div>
+                    </div>
+                    <!--Non active-->
+                    <div class="player">
+                        <div class="player-img">
+                            <img src="img/lewandowski.jpg" alt="player-4" />
+                        </div>
+                        <div class="player-name">
+                            <div class="number">1</div>
+                            <h2 class="name">Lewandowski</h2>
+                        </div>
+                    </div>
+                    <div class="player">
+                        <div class="player-img">
+                            <img src="img/lewandowski.jpg" alt="player-4" />
+                        </div>
+                        <div class="player-name">
+                            <div class="number">1</div>
+                            <h2 class="name">Krychowiak</h2>
                         </div>
                     </div>
                 </div>
@@ -295,6 +315,7 @@
                 </div>
             </main>
         </section>
+        <!-- TEAM STATS SECTION -->
         <section class="stats">
             <header class="stats-header">
                 <h1>Season stats (20/21)</h1>
@@ -320,7 +341,7 @@
                     <div class="icon">
                         <img src="img/exit.png" alt="goals-conceded" />
                     </div>
-                    <div class="number goals-condeded-number">15</div>
+                    <div class="number goals-conceded-number">15</div>
                     <h3 class="stat-title">Goals conceded</h3>
                 </div>
 
@@ -332,6 +353,59 @@
                     <h3 class="stat-title">Points</h3>
                 </div>
             </main>
+        </section>
+        <!-- PLAYERS STATS SECTION -->
+        <section class="players-stats">
+            <header class="players-stats-header">
+                <h1>Players stats</h1>
+                <h2>Best of</h2>
+            </header>
+            <main class="players-stats-main">
+                <label for="position">
+                    <select id="position" class="position-select" >
+                        <option name="goalkeepers">Goalkeepers</option>
+                        <option name="defenders">Defenders</option>
+                        <option name="midfielders">Midfielders</option>
+                        <option name="forwards">Forwards</option>
+                        <option name="all">All</option>
+                    </select>
+                </label>
+
+                <table class="players-table">
+                    <thead>
+                        <tr>
+                            <th>Player name</th>
+                            <th>Matches</th>
+                            <th>Minutes played</th>
+                            <th>Clean sheets</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Chris Jack</td>
+                        <td>6</td>
+                        <td>540</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Chris Jack</td>
+                        <td>6</td>
+                        <td>540</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Chris Jack</td>
+                        <td>6</td>
+                        <td>540</td>
+                        <td>2</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </main>
+            <section class="players-stats-buttons">
+                <button class="full-squad">View full<br/>squad</button>
+                <button class="players-review">Players<br/>review</button>
+            </section>
         </section>
     </main>
 </div>

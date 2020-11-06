@@ -1,0 +1,30 @@
+@media(max-width: 1100px) {
+    /* TEAM STATS */
+    /* Stats header */
+    .stats .stats-header h1 {
+        font-size: 35px;
+    }
+
+    /* Stats main */
+
+    .stats .stats-main {
+        width: 90%;
+    }
+
+    .stats .stats-main .stat {
+        width: 100px;
+    }
+
+    .stats .stats-main .stat .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width: 700px) {
+    /* TEAM STATS */
+    /* Stats main */
+    .stats .stats-main .stat .number {
+        font-size: 30px;
+    }
+}

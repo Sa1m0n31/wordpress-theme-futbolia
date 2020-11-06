@@ -445,12 +445,20 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    padding: 0 50px;
+}
+
+.team .team-slider .team-slider-container::-webkit-scrollbar {
+    display: none;
 }
 
 .team .team-slider .team-slider-container .player {
     width: 250px;
     height: 300px;
     color: #fff;
+    margin: 0 50px;
 }
 
 .team .team-slider .team-slider-container .player .player-img {
@@ -501,6 +509,11 @@ button {
     align-items: center;
     position: absolute;
     top: 100px;
+    cursor: pointer;
+}
+
+.team .team-slider-arrow:hover img {
+    opacity: .75;
 }
 
 .team .team-slider-previous {
@@ -514,6 +527,7 @@ button {
 .team .team-slider-arrow img {
     width: 70px;
     height: 70px;
+    transition: .2s;
 }
 
 /* STATS */
@@ -521,7 +535,7 @@ button {
 .stats {
     width: 100%;
     margin-top: 320px;
-    margin-bottom: 500px;
+    padding-bottom: 50px;
     background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
@@ -573,7 +587,8 @@ button {
 
 .stats .stats-main .stat .number {
     color: #3F3679;
-    font-size: 64px;
+    font-size: calc(40px + 30 * ((100vw - 700px)/(1500)));
+    min-font-size: 30px;
     font-weight: 700;
 }
 
@@ -583,4 +598,123 @@ button {
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* PLAYERS STATS */
+
+.players-stats {
+    width: 100vw;
+    height: 100vh !important;
+    background: url("./img/bramkarz.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+/* Header */
+
+.players-stats .players-stats-header {
+    color: #3F3679;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+
+.players-stats .players-stats-header h1 {
+    font-size: 40px;
+}
+
+.players-stats .players-stats-header h2 {
+    font-size: 26px;
+}
+
+/* Main */
+
+.players-stats .players-stats-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.players-stats .players-stats-main .position-select {
+    outline: none;
+    border: none;
+    background-color: #3F3679;
+    width: 240px;
+    height: 46px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    text-align-last:center;
+}
+
+.players-stats .players-stats-main .position-select option {
+    height: 46px;
+    font-size: 20px;
+    padding: 10px !important;
+}
+
+/* Table */
+
+.players-stats .players-table {
+    margin: 50px 0;
+    width: 1000px;
+    opacity: .75;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-collapse: collapse;
+}
+
+.players-stats .players-table thead tr {
+    font-size: 20px;
+    background-color: #272727 !important;
+}
+
+.players-stats .players-table tr {
+    height: 50px;
+}
+
+.players-stats .players-table tr td {
+    text-align: center;
+}
+
+.players-stats .players-table tr:nth-child(even) {
+    background-color: #7E7E7E;
+}
+
+.players-stats .players-table tr:nth-child(odd) {
+    background-color: #6A6A6A;
+}
+
+/* Buttons */
+
+.players-stats .players-stats-buttons {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.players-stats .players-stats-buttons > * {
+    background-color: #3F3679;
+    width: 130px;
+    height: 52px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.4;
+    transition: .2s;
+}
+
+.players-stats .players-stats-buttons > *:hover {
+    background-color: #433C78;
 }
