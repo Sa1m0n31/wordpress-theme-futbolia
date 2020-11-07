@@ -1,5 +1,28 @@
+@media(max-width: 1700px) {
+    /* OUR TEAM */
+    .team .team-slider .team-slider-container {
+        width: 930px;
+    }
+
+    .team .team-slider .team-slider-container .player {
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 1200px) {
+    /* OUR TEAM */
+    .team .team-slider .team-slider-container {
+        width: 620px;
+    }
+
+    .team .team-slider .team-slider-container .player {
+        margin: 0 30px;
+    }
+}
+
 @media(max-width: 1100px) {
     /* TEAM STATS */
+
     /* Stats header */
     .stats .stats-header h1 {
         font-size: 35px;
@@ -8,7 +31,8 @@
     /* Stats main */
 
     .stats .stats-main {
-        width: 90%;
+        width: 80%;
+        justify-content: space-between;
     }
 
     .stats .stats-main .stat {
@@ -19,12 +43,74 @@
         width: 50px;
         height: 50px;
     }
+
+    /* PLAYERS STATS */
+    .players-stats .players-stats-main, .players-stats .players-stats-buttons {
+        width: 80%;
+    }
+}
+
+@media(max-width: 900px) {
+    /* OUR TEAM */
+    .team .team-slider .team-slider-container {
+        width: 290px;
+    }
+
+    .team .team-slider .team-slider-container .player {
+        margin: 0 20px;
+    }
+
+    /* TEAM STATS */
+    .stats {
+        width: 90%;
+    }
+
+    /* PLAYERS STATS */
+    .players-stats .players-stats-main, .players-stats .players-stats-buttons {
+        width: 90%;
+    }
+
+    .players-stats .players-table, .players-stats .players-table thead tr {
+        font-size: calc(16px + 8 * ((100vw - 700px)/(400)));
+    }
 }
 
 @media(max-width: 700px) {
+    /* OUR TEAM */
+    .team .team-slider-arrow {
+        width: 80px;
+        height: 59px;
+    }
+
+    .team .team-slider-arrow img {
+        width: 25px;
+        height: 25px;
+    }
+
     /* TEAM STATS */
     /* Stats main */
+    .stats .stats-main {
+        flex-wrap: wrap;
+    }
+
+    .stats .stats-main .stat {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+
     .stats .stats-main .stat .number {
         font-size: 30px;
     }
+
+    /* PLAYERS STATS */
+    .players-stats .players-table, .players-stats .players-table thead tr {
+        font-size: 16px;
+    }
+
+    .players-stats .players-stats-buttons {
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 500px) {
 }

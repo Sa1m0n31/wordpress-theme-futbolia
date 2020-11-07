@@ -54,16 +54,28 @@ document.addEventListener("DOMContentLoaded", () => {
    const next = document.querySelector(".team-slider-next");
    const previous = document.querySelector(".team-slider-previous");
 
+   let move;
+
+   if(width > 1600) {
+       move = 350;
+   }
+   else if(width > 900) {
+       move = 310;
+   }
+   else {
+       move = 290;
+   }
+
    previous.addEventListener("click", () => {
        ourTeam.scrollBy({
-           left: -250,
+           left: -move,
            behavior: "smooth"
        });
    });
 
    next.addEventListener("click", () => {
        ourTeam.scrollBy({
-           left: 250,
+           left: move,
            behavior: "smooth"
        });
    });

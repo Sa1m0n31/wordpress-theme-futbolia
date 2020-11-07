@@ -11,12 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e480b870-5b26-4291-829c-998fda56bb3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/bramkarz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/lewandowski.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/data.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,11 +49,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme\img" />
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme" />
     </key>
   </component>
@@ -71,7 +70,8 @@
       <workItem from="1604358989668" duration="6467000" />
       <workItem from="1604423336212" duration="8517000" />
       <workItem from="1604598317958" duration="504000" />
-      <workItem from="1604615525877" duration="7282000" />
+      <workItem from="1604615525877" duration="7882000" />
+      <workItem from="1604699245158" duration="6326000" />
     </task>
     <servers />
   </component>
