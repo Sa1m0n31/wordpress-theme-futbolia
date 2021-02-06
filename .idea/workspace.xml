@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e480b870-5b26-4291-829c-998fda56bb3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/data.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0c81ae09-456c-45a2-b43a-b392d22779f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WordpressTheme.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arrow-more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/boisko.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bramkarz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bvb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/choragiewka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cristiano.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/data.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/erling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/header-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/herb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/lewandowski.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/lewy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/liwerpurz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/olempik.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pileczka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pilkarzyk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pitch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/previous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/punkt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/reus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/trawnik.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
@@ -23,86 +50,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-      </list>
-    </option>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1jhoZOUvHTuErfdAq0H7juK4Sta" />
+  <component name="ProjectId" id="1o6nxS82Q3945NpUb55rS5nyffE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme\img" />
-      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\WordpressTheme" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e480b870-5b26-4291-829c-998fda56bb3d" name="Default Changelist" comment="" />
-      <created>1604265739006</created>
+      <changelist id="0c81ae09-456c-45a2-b43a-b392d22779f3" name="Default Changelist" comment="" />
+      <created>1612616153984</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604265739006</updated>
-      <workItem from="1604265739769" duration="5878000" />
-      <workItem from="1604276361620" duration="20000" />
-      <workItem from="1604358989668" duration="6467000" />
-      <workItem from="1604423336212" duration="8517000" />
-      <workItem from="1604598317958" duration="504000" />
-      <workItem from="1604615525877" duration="7882000" />
-      <workItem from="1604699245158" duration="6326000" />
+      <updated>1612616153984</updated>
+      <workItem from="1612616155239" duration="605000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1604598823703">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604276379909" />
-    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604598823703" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1604423510224">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604423510224" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604265750142">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604265750142" />
   </component>
 </project>

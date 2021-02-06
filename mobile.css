@@ -1,4 +1,4 @@
-@media(max-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     /* OUR TEAM */
     .team .team-slider .team-slider-container {
         width: 930px;
@@ -7,9 +7,111 @@
     .team .team-slider .team-slider-container .player {
         margin: 0 30px;
     }
+
+    /* GALLERY */
+    .gallery-section .gallery-main .gallery-item {
+        width: 30vw;
+        height: 30vw;
+    }
+  
+  	/* PLAYER */
+    .player-main {
+        width: 1000px;
+    }
+
+    .player-main .first-row img {
+        width: 300px;
+        height: 340px;
+    }
+
+    .player-main .first-row .player-main-stats {
+        background: rgba(0, 0, 0, .65);
+        color: #fff;
+        width: 680px;
+        height: 340px;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .player-main .first-row .player-main-stats .main-stat {
+        width: 160px;
+        text-align: center;
+    }
+
+    .player-main .first-row .player-main-stats .main-stat .main-stat-number {
+        font-size: 70px;
+    }
+
+    .player-main .first-row .player-main-stats .main-stat .main-stat-caption {
+        font-size: 28px;
+    }
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1500px) {
+	/* PREVIOUS NEWS */
+  .main-section .previous-news .table {
+  	display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-section .previous-news {
+  	justify-content: center;
+  }
+  
+  .main-section .news-section .news-container {
+  	flex-direction: column;
+  }
+  
+  .main-section .news-section .news-container .news-item {
+  	margin-bottom: 30px;
+  }
+  
+  /* COMMENTS */
+  .comments-section {
+  	width: 100vw;
+  }
+  
+  .comments-section .post-comments {
+  	width: 100%;
+  }
+}
+
+@media(max-width: 1300px) {
+  /* HEADER */
+  .searchform {
+    position: absolute;
+    top: 50%;
+  	right: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .menu-social-media {
+  	display: none !important;
+  }
+  
+	/* MATCHES */
+  .matches {
+ 	flex-direction: column;
+    align-items: center;
+  }
+  
+  .matches .last-match {
+  	margin-bottom: 30px;
+  }
+  
+  .matches .upcoming-matches {
+  	margin-left: 0;
+  }
+  
+  /* TEAM PAGE */
+  .team-container .team-container-section-main {
+  	grid-template-columns: repeat(3, 250px);
+}
+}
+
+@media only screen and (max-width: 1200px) {
     /* OUR TEAM */
     .team .team-slider .team-slider-container {
         width: 620px;
@@ -18,9 +120,19 @@
     .team .team-slider .team-slider-container .player {
         margin: 0 30px;
     }
+  
+  /* SINGLE GALLERY */
+  .gallery-main-content > div {
+  	grid-template-columns: repeat(2, 45%);
+	}
+  
+  /* ARCHIVE */
+  .archive-container {
+  	grid-template-columns: 100%;
+  }
 }
 
-@media(max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
     /* TEAM STATS */
 
     /* Stats header */
@@ -48,22 +160,264 @@
     .players-stats .players-stats-main, .players-stats .players-stats-buttons {
         width: 80%;
     }
+  
+  /* SINGLE PLAYER */
+  .player-main {
+  	width: 100vw;
+  	margin-bottom: 20px;
+  }
+  
+  .player-main .white-stats .white-stat > img {
+  	width: 60px;
+    height: 60px;
+  }
+  
+  .player-main .card {
+  	width: 40px;
+    height: 68px;
+  }
+  
+  .player-main .next-rows .player-stat {
+  	font-size: 20px;
+  }
+  
+  .player-main .white-stats .white-stat .white-stat-number {
+  	font-size: 30px;
+  }
+  
+  .player-main .white-stat .white-stat-caption {
+  	font-size: calc(20px + 30 * ((100vw - 700px)/(1500)));
+  }
+  
+  /* SEARCH */
+  .search-section-content {
+  	grid-template-columns: auto;
+  }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
+	/* PREVIOUS NEWS */
+  .main-section .previous-news {
+  	flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-section .news-section h2, .main-section .previous-news .table h2 {
+  	text-align: center;
+    margin: 0 auto;
+  }
+  
+  .main-section .news-section .news-container {
+  	transform: none !important;
+    width: 90vw;
+    align-items: center;
+  }
+  
+  .main-section .previous-news .table {
+  	margin: 0 !important;
+  }
+  
+  .main-section .previous-news .table table {
+  	border-left: none !important;
+    padding-left: 0 !important;
+  }
+  
+  .news-container .news-item {
+    margin-left: 150px;
+  }
+  
+  .news-container .news-item .news-img {
+    transform: translateX(-30px);
+  }
+  
+  .news-container .news-item .news-content {
+    margin: 0 auto;
+  }
+  
+  /* MATCHES */
+  .matches {
+  	border-top: none !important;
+  }
+  
+  .matches .last-match, .matches .upcoming-matches {
+  	width: 80vw;
+  }
+  
+  .matches .upcoming-match {
+  	margin: 0 auto;
+  }
+  
+  .matches .score .team, .matches .score .team img {
+  	width: 60px;
+    height: 60px;
+  }
+  
+  .matches .score {
+  	width: 100% !important;
+  }
+  
+  .matches .upcoming-matches .upcoming-matches-container {
+  	margin: 0 auto;
+    width: 100% !important;
+  }
+  
+  .upcoming-matches-container > img, .upcoming-matches-scroll, .matches .upcoming-matches .upcoming-match::after {
+  	display: none;
+  }
+  
+  .matches .upcoming-matches h2 {
+  	text-align: center;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  
+  .matches h2, .matches .upcoming-matches h2 {
+  	font-size: 18px;
+  }
+  
+  /* TEAM PAGE */
+  .team-container .team-container-section-header {
+  	text-align: center;
+  }
+  
+  .team-container .team-container-section-main {
+    width: 100%;
+  	grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    justify-items: center;
+	}
+  
+  /* COMMENTS */
+  #commentform .comment-form-author, #commentform .comment-form-email {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .comments-section .comment-respond {
+    width: 100%;
+  }
+  
+  .comments-section .respond-container img {
+  	position: absolute;
+    left: 10vw;
+    top: 120px;
+  }
+  
+  /* SINGLE GALLERY */
+  .gallery-main-content > div {
+    column-count: 2;
+    width: fit-content;
+  }
+  
+  /* SEARCH PAGE */
+  .search-matches .search-section-content {
+    grid-template-columns: 350px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* GLOBAL */
+  .only-900 {
+  	display: none !important;
+  }
+  
+  	/* LANDING PAGE */
+  .header {
+  	height: 400px;
+  }
+  
+  .page-header .header-home-url {
+  	justify-content: center;
+  }
+  
+  .page-header .header-home-url img {
+  	margin-left: 0;
+  }
+  
+  .page-header .header-home-url h1 {
+  	margin-left: 8px;
+  }
+  
+  .header .main-menu {
+  	height: 50px;
+  }
+  
+  .news {
+  	height: 400px;
+  }
+  
+  .header-900 {
+  	display: block;
+  }
+  
+  .news .title-section {
+  	top: 40%;
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80vw !important;
+  }
+  
+  .header .title-section .title {
+  	font-size: 30px;
+    margin: 0 auto;
+  }
+  
+  .header-900 {
+  	position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    z-index: 4;
+  }
+  
+  .header-900 * {
+  	position: relative;
+    z-index: 4;
+  }
+  
+  .header-900 menu {
+  	width: 100%;
+  }
+  
+  .header-900 menu ul {
+  	list-style-type: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .header-900 menu ul > * {
+  	background-color: #433C78;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 7px;
+    font-size: 14px !important;
+  }
+  
+  
     /* OUR TEAM */
+  .team .team-header h1 {
+  	font-size: 25px;
+  }
+  
     .team .team-slider .team-slider-container {
         width: 290px;
     }
 
     .team .team-slider .team-slider-container .player {
         margin: 0 20px;
-    }
-
-    /* TEAM STATS */
-    .stats {
-        width: 90%;
-    }
+  		min-width: 250px;  
+  }
 
     /* PLAYERS STATS */
     .players-stats .players-stats-main, .players-stats .players-stats-buttons {
@@ -73,9 +427,81 @@
     .players-stats .players-table, .players-stats .players-table thead tr {
         font-size: calc(16px + 8 * ((100vw - 700px)/(400)));
     }
+  
+  	  .players-table-insert > tr > td:nth-child(3) {
+  	display: none !important;
+  }
+  
+  /* SINGLE POST */
+  .article-main-header {
+  	height: 300px;
+  }
+  
+  .article-main-header .news-title {
+  	text-align: center;
+    font-size: 25px;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .article-main-header .news-date {
+  	font-size: 16px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* SINGLE PLAYER */
+  .player-main .first-row .player-main-stats .main-stat .main-stat-number {
+  	font-size: calc(30px + 20 * ((100vw - 700px)/(1500)));
+  }
+  
+  .player-main .first-row .player-main-stats .main-stat .main-stat-caption {
+  	font-size: calc(15px + 20 * ((100vw - 700px)/(1500)));
+  }
+  
+  .player-main .first-row .player-main-stats {
+  	flex-direction: column;
+    align-items: center;
+  }
+  
+  .player-main .first-row > img {
+  	position: relative;
+    z-index: 4;
+  }
+  
+  /* SINGLE GALLERY */
+  .gallery-main-header {
+  	height: 150px;
+    padding-top: 80px;
+  }
+  
+  /* COMMENTS */
+  .comments-section .comment-body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 25% 70%;
+    grid-column-gap: 5%;
+  }
+  
+  .comments-section .children {
+    margin-left: 20px;
+	}
+  
+  /* SCHEDULE AND RESULTS */
+  .season-results-container {
+  	max-height: none;
+  }
 }
 
-@media(max-width: 700px) {
+@media only screen and (max-width: 700px) {
+  	/* HEADER */
+  .searchform, .searchform input {
+  	width: 100px;
+  } 
+  
     /* OUR TEAM */
     .team .team-slider-arrow {
         width: 80px;
@@ -89,6 +515,10 @@
 
     /* TEAM STATS */
     /* Stats main */
+  .stats .stats-header h1 {
+  	font-size: 25px;
+  }
+  
     .stats .stats-main {
         flex-wrap: wrap;
     }
@@ -103,6 +533,14 @@
     }
 
     /* PLAYERS STATS */
+  .players-stats .players-stats-header h1 {
+  	font-size: 25px;
+  }
+  
+  .players-stats .players-stats-header h2 {
+  	font-size: 20px;
+  }
+  
     .players-stats .players-table, .players-stats .players-table thead tr {
         font-size: 16px;
     }
@@ -110,7 +548,305 @@
     .players-stats .players-stats-buttons {
         justify-content: space-evenly;
     }
+  
+  .players-stats .players-stats-main .position-select {
+  	font-size: 18px;
+  }
+  
+  .players-stats .players-table thead th, .players-stats .players-table tbody tr {
+  	font-size: 13px !important;
+  }
+
+    /* GALLERY */
+  .gallery-section .gallery-header h1 {
+  	margin-bottom: 0;
+  }
+  
+    .gallery-section .gallery-main {
+        flex-direction: column;
+      	align-items: center;
+      	width: 100vw;
+    }
+
+    .gallery-section .gallery-main .gallery-item {
+        width: 75vw;
+        height: 75vw;
+        margin-bottom: 30px;
+    }
+
+    /* FOOTER */
+  .footer {
+  	height: auto !important;
+  }
+  
+  .footer .footer-center h2 {
+  	font-size: 20px;
+  }
+  
+  .footer .footer-bottom {
+  	position: relative !important;
+  }
+  
+    .footer .footer-bottom ul {
+        display: flex;
+      	flex-wrap: wrap;
+      	width: 100%;
+    }
+  
+  .footer .footer-bottom ul li {
+  	width: 100%;
+    height: 25px;
+    margin: 15px 0;
+  }
+  
+  .footer .footer-bottom ul li a {
+  	display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-bottom-down {
+  	font-size: 12px;
+  }
+  
+  /* SINGLE PLAYER */
+  .player-main .white-stats {
+  	display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 180px);
+    grid-column-gap: 10%;
+    grid-row-gap: 30px;
+  }
+  
+  /* SINGLE GALLERY */
+  .gallery-main-content > div {
+  	grid-template-columns: 100%;
+  }
+  
+  .search-players .search-section-content {
+    grid-template-columns: 90vw;
+  }
+  
+  /* SEARCH */
+  .search-galleries .gallery-item {
+    width: 250px;
+    height: 250px;
+    margin: 0 !important;
+  }
+  
+  .search-section-content .last-match {
+  	width: 320px;
+    height: 240px;
+  }
+  
+  .search-section-content .last-match .team {
+  	position: relative;
+     width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+@media(max-width: 600px) {
+	/* PREVIOUS NEWS */
+  .news-item {
+  	margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .news-item {
+  	width: 80vw;
+    height: 160px;
+    transform: translateX(15px);
+  }
+  
+  .news-item .news-img {
+  	height: 25vw;
+    width: 25vw;
+    transform: translate(-30px, -50%) !important;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .search-section-content .news-item .news-img {
+  	transform: translate(-20px, -50%) !important;
+  }
+  
+  .news-item .news-img img {
+  	width: 100%;
+    height: 100%;
+  }
+  
+  .archive-container {
+  	width: 90vw;
+  }
+  
+  .archive-container .news-item {
+  	justify-content: center;
+    margin-right: 0;
+  	transform: translateX(5vw) !important;
+  }
+  
+  /* SINGLE PLAYER */
+  .player-main .first-row .player-main-stats .stats-background {
+  	display: none;
+  }
+  
+  /* TEAM PAGE */
+  .team-container .team-container-section-main {
+  	grid-template-columns: 250px;
+	}
+  
+  .team-container-section .player-name .name {
+  	width: 200px !important;
+  }
+  
+  /* COMMENTS */
+  .comments-section .respond-container img {
+  	display: none;
+  }
+  
+  form-author, #commentform .comment-form-email, form-author, #commentform .comment-form-author {
+  	justify-content: flex-start;
+  }
+  
+  form-author, #commentform .comment-form-email input, form-author, #commentform .comment-form-author input {
+  	width: 60%;
+    height: 10vw;
+  }
+  
+  /* SEARCH */
+  .search-section .news-item .news-img {
+  	transform: translate(-10px, -50%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+	/* OUR TEAM */
+  .team .team-slider .team-slider-container {
+  	width: 70vw;
+  }
+  
+  .team .team-slider .team-slider-container .player {
+  	min-width: 62vw !important;
+    margin: 0 4vw !important;
+  }
+  
+  .team .team-slider-arrow {
+  	width: 10vw;
+  }
+  
+  .team .team-slider .team-slider-container .player .player-img img {
+  	width: 100%;
+  }
+  
+  /* PLAYERS STATS */
+  .players-stats .players-table thead th, .players-stats .players-table tbody tr {
+  	font-size: 12px !important;
+  }
+  
+  /* SINGLE PLAYER */
+  .player-main .next-rows .player-stat {
+  	font-size: 16px;
+  }
+  
+  .player-main .first-row img, .player-main .first-row .player-main-stats {
+    height: calc(60vw * 1.13);
+  }
+  
+  .player-main .first-row img {
+  	width: 60vw;
+  }
+  
+  .player-main .first-row .player-main-stats .main-stat {
+  	width: 100%;
+  }
+  
+  /* SEARCH */
+  .search-section-content .news-item {
+  	width: 350px;
+    margin: 0 !important;
+    transform: translateX(10px);
+  }
+}
+
+@media(max-width: 400px) {
+	/* SEARCH */
+   .search-section-content .news-item .news-img {
+  	transform: translate(-8px, -50%) !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+    .container-inner {
+        width: 100vw;
+    }
+}
+
+/* TABLE */
+
+@media only screen and (max-width: 1300px) {
+    .table-main .table-header {
+        font-size: calc(30px + 30 * ((100vw - 700px)/(1000)));
+    }
+
+    .table-main .season-table-container {
+        width: 800px;
+    }
+
+    .table-main .season-table-container .season-table {
+        width: 750px;
+    }
+}
+
+@media(max-width: 900px) {
+    .table-main .season-table-container {
+        width: 500px;
+    }
+
+    .table-main .season-table-container .season-table {
+        width: 450px;
+    }
+
+    .season-table .club {
+        width: 300px;
+    }
+
+    .season-table .wins, .season-table .draws, .season-table .losses {
+        display: none;
+    }
+
+    .season-table .position {
+        font-size: 20px;
+    }
+}
+
+/* STANDINGS */
+@media(max-width: 1300px) {
+  .plus-minus {
+  	position: relative;
+    z-index: -1 !important;
+    color: transparent !important;
+    background-color: transparent !important;
+  }
 }
 
 @media(max-width: 500px) {
+	/* STANDINGS */
+  .table-main .season-table-container {
+  	width: 100vw;
+  }
+  
+  .table-main .season-table-container .season-table {
+  	width: 90vw !important;
+  }
+  
+  .season-table .club {
+  	font-size: 14px;
+  }
+  
+  .table-main .season-table-container .gs, .table-main .season-table-container .gc {
+  	display: none !important;
+  }
 }

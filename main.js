@@ -1,52 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
    let activeNews = 1;
 
-   const button1 = document.querySelector(".button-1");
-   const button2 = document.querySelector(".button-2");
-
-   const news1 = document.querySelector(".news-1");
-   const news2 = document.querySelector(".news-2");
-
    const width = window.innerWidth;
+	
+	/* Upcoming matches */
+   const nextMatch = document.querySelector(".next-match");
+   const previousMatch = document.querySelector(".previous-match");
+   const matchesContainer = document.querySelector(".upcoming-matches-scroll");
 
-   gsap.set(news2, { x: -width });
-
-   button1.addEventListener("click", () => {
-       console.log(activeNews);
-        if(activeNews === 2) {
-
-            gsap.fromTo(news2, { x: 0 }, { x: width, duration: 1 });
-            gsap.fromTo(news1, { x: -width }, { x: 0, duration: 1 });
-
-            button1.style.opacity = "1";
-            button2.style.opacity = ".5";
-
-            /*
-            news1.classList.add("news-active");
-            news2.classList.remove("news-active");
-
-             */
-            activeNews = 1;
-        }
+   nextMatch.addEventListener("click", () => {
+       console.log("next");
+      matchesContainer.scrollBy({
+         left: moveMatch,
+         behavior: "smooth"
+      });
    });
 
-   button2.addEventListener("click", () => {
-       console.log(activeNews);
-      if(activeNews === 1) {
-          /* news1.classList.remove("news-active");
-          news2.classList.add("news-active");
-
-          */
-
-          gsap.fromTo(news1, { x: 0 }, { x: width, duration: 1 });
-          gsap.fromTo(news2, { x: -width }, { x: 0, duration: 1 });
-
-          button2.style.opacity = "1";
-          button1.style.opacity = ".5";
-
-          activeNews = 2;
-      }
+   previousMatch.addEventListener("click", () => {
+      matchesContainer.scrollBy({
+          left: -moveMatch,
+          behavior: "smooth"
+      });
    });
+
+   if(width > 1600) {
+       moveMatch = 350;
+   }
 
    /* Our team */
    const ourTeam = document.querySelector(".team-slider-container");
@@ -60,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
        move = 350;
    }
    else if(width > 900) {
-       move = 310;
+       move = 350;
    }
    else {
-       move = 290;
+       move = window.innerWidth * 0.7;
    }
 
    previous.addEventListener("click", () => {
@@ -149,5 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         isVisible = elemTop < window.innerHeight && elemBottom >= 0;
         return isVisible;
     }
+	
+	console.log("jestem");
 
 });
